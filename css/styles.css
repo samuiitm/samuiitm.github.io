@@ -404,7 +404,7 @@ nav {
 .bento-grid .small.small-top:hover .img-kobe {
     filter: brightness(120%) blur(0px);
     opacity: 1;
-    transform: translate(78%, -72%);
+    transform: translate(78%, -71%);
 }
 
 .img-joel {
