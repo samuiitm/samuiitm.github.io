@@ -219,7 +219,7 @@ nav {
     filter: blur(3px);
     background-size: cover;
     background-position: center;
-    opacity: 0.4;
+    opacity: 0.6;
     z-index: -1;
 }
 
@@ -240,7 +240,7 @@ nav {
     filter: blur(3px);
     background-size: cover;
     background-position: center;
-    opacity: 0.4;
+    opacity: 0.6;
     z-index: -1;
 }
 
