@@ -325,9 +325,9 @@ nav {
 }
 
 .social-icons .line a::after {
-    content: attr(data-label); /* Usamos el atributo data-label para mostrar el texto */
+    content: attr(data-label);
     position: absolute;
-    bottom: -35px; /* Ajusta la posición del texto debajo del ícono */
+    bottom: -35px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #1D1D1D;
@@ -343,7 +343,7 @@ nav {
 
 .social-icons .line a:hover::after {
     opacity: 1;
-    transform: translateX(-50%) translateY(-5px); /* Aparece y sube ligeramente */
+    transform: translateX(-50%) translateY(-5px);
 }
 
 .line a p {
@@ -389,7 +389,7 @@ nav {
     display: block;
     position: absolute;
     margin: 0 auto;
-    transform: translate(85%, -72%);
+    transform: translate(85%, -70%);
     width: 200px;
     height: 210px;
     background-image: url(../images/img-kobe.webp);
@@ -400,32 +400,11 @@ nav {
     opacity: 1;
 }
 
-.kobe-mask {
-    display: block;
-    position: absolute;
-    margin: 0 auto;
-    transform: translate(50%, -65%);
-    rotate: 10deg;
-    width: 200px;
-    height: 400px;
-    background-image: url(../images/kobe-mask.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: blur(1px);
-    transition: 0.3s ease;
-    opacity: 0;
-}
 
 .bento-grid .small.small-top:hover .img-kobe {
     filter: brightness(120%) blur(0px);
     opacity: 1;
-    transform: translate(78%, -74%);
-}
-
-.bento-grid .small.small-top:hover .kobe-mask {
-    filter: brightness(120%) blur(0px);
-    opacity: 1;
-    transform: translate(40%, -65%);
+    transform: translate(78%, -72%);
 }
 
 .img-joel {
@@ -457,7 +436,7 @@ nav {
     rotate: 10deg;
     width: 200px;
     height: 400px;
-    background-image: url(../images/kobe-mask.webp);
+    background-image: url(../images/mask.webp);
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s ease;
