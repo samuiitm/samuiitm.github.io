@@ -138,9 +138,8 @@ main {
 .bento-grid .large {
     position: relative;
     grid-column: span 4;
-    grid-row: span 3;
+    grid-row: span 2;
     min-height: 200px;
-    /* border: 0px solid; */
     overflow: hidden;
     background: transparent;
 }
@@ -161,8 +160,6 @@ main {
 
 .bento-grid .large-width {
     grid-column: span 4;
-    grid-row: span 2;
-    min-height: 200px;
     position: relative;
     overflow: hidden;
     background: transparent;
@@ -185,7 +182,6 @@ main {
 .bento-grid .medium {
     grid-column: span 4;
     grid-row: span 1;
-    min-height: 270px;
     position: relative;
     overflow: hidden;
     background: transparent;
@@ -214,6 +210,20 @@ main {
     gap: 10px;
     background-image: url(../images/about/1.webp);
     background-size: cover;
+}
+
+.bento-grid .large-height {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    grid-column: span 2;
+    grid-row: span 2;
+    min-height: 350px;
+}
+
+.bento-grid .small {
+    grid-row: span 1;
+    min-height: 48.5%;
 }
 
 .bento-grid .small.small-top {
@@ -257,29 +267,9 @@ main {
     z-index: -1;
 }
 
-.bento-grid .large-height {
-    display: flex;
-    flex-direction: column;
-    grid-column: span 2;
-    grid-row: span 2;
-    min-height: 350px;
-    gap: 10px;
-}
-
-.bento-grid .large-height .small {
-    grid-row: span 1;
-    min-height: 242.5px;
-}
-
-.bento-grid .small {
-    grid-column: span 2;
-    grid-row: span 1;
-    min-height: 100px;
-}
-
 /* Content */
 .content {
-    padding: 20px 50px;
+    padding: 35px 50px;
 }
 
 .content-small {
@@ -288,6 +278,7 @@ main {
 }
 
 .title {
+    margin: 0;
     color: #b76eff;
 }
 
@@ -299,7 +290,7 @@ main {
 
 .content .aspiring-dev {
     font-size: 20px;
-    margin-top: -20px;
+    margin: 0;
     font-weight: 600;
     color: #fff;
 }
@@ -307,6 +298,10 @@ main {
 .content .text p {
     color: #ffffff;
     text-wrap: balance
+}
+
+#last-p {
+    margin-bottom: 5px;
 }
 
 .about-head {
@@ -324,7 +319,7 @@ main {
 
 .social-icons {
     display: flex;
-    align-items: center;
+    align-items: first baseline;
     gap: 15px;
     flex-wrap: wrap;
 }
@@ -407,9 +402,9 @@ main {
     display: block;
     position: absolute;
     margin: 0 auto;
-    transform: translate(85%, -70%);
+    transform: translate(85%, -60%);
     width: 200px;
-    height: 210px;
+    height: 250px;
     background-image: url(../images/about/img-kobe.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -422,7 +417,7 @@ main {
 .bento-grid .small.small-top:hover .img-kobe {
     filter: brightness(120%) blur(0px);
     opacity: 1;
-    transform: translate(78%, -71%);
+    transform: translate(75%, -63%);
 }
 
 .img-joel {
@@ -663,4 +658,91 @@ main {
     background-color: #00000070;
     border-radius: 20px;
     font-size: 13px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .bento-grid .large {
+        grid-column: span 8;
+    }
+
+    .bento-grid .large-width {
+        grid-column: span 8;
+    }
+
+    .bento-grid .large-height-artwork {
+        grid-column: span 4;
+    }
+
+    .bento-grid .large-height {
+        grid-column: span 4;
+    }
+
+    .bento-grid .small {
+        grid-column: span 4;
+    }
+
+    .bento-grid .medium {
+        grid-column: span 8;
+    }
+
+    .img-kobe {
+        transform: translate(135%, -50%);
+    }
+
+    .bento-grid .small.small-top:hover .img-kobe {
+        transform: translate(120%, -55%);
+    }
+
+    .img-joel {
+        transform: translate(110%, -55%);
+    }
+
+    .bento-grid .small.small-bottom:hover .img-joel{
+        transform: translate(100%, -60%);
+    }
+
+    .joel-quote .content-small,
+    .kobe-quote .content-small {
+        max-width: 200px;
+    }
+    
+    .bento-grid .small.small-top:hover .mask{
+        transform: translate(80%, -70%);
+    }
+
+    .bento-grid .small.small-bottom:hover .mask{
+        transform: translate(85%, -70%);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bento-grid .large {
+        grid-column: span 8;
+    }
+
+    .bento-grid .large-width {
+        grid-column: span 8;
+    }
+
+    .bento-grid .large-height-artwork {
+        grid-column: span 8;
+        background-position: center;
+    }
+
+    .bento-grid .large-height {
+        grid-column: span 8;
+    }
+
+    .bento-grid .small {
+        grid-column: span 8;
+    }
+
+    .bento-grid .medium {
+        grid-column: span 8;
+    }
+
+    .about-head {
+        flex-direction: column;
+    }
 }
