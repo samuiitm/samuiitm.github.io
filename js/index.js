@@ -7,10 +7,10 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const itemsList = document.querySelectorAll('.container li');
-itemsList.forEach(item => {
+const itemsListHeader = document.querySelectorAll('.container li');
+itemsListHeader.forEach(item => {
     item.addEventListener('click', () => {
-        itemsList.forEach(li => li.classList.remove('active'));
+        itemsListHeader.forEach(li => li.classList.remove('active'));
         item.classList.add('active');
     });
 });
@@ -103,3 +103,11 @@ const handleScroll = () => {
 
 window.addEventListener('scroll', handleScroll);
 handleScroll();
+
+const itemsProjectTypes = document.querySelectorAll('.project-types .button');
+itemsProjectTypes.forEach(item => {
+    item.addEventListener('click', () => {
+        itemsProjectTypes.forEach(button => button.classList.remove('active'));
+        item.classList.add('active');
+    });
+});
