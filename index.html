@@ -10,19 +10,39 @@
 </head>
 <body>
     <header class="blur-header">
-        <div class="container">
-            <div class="logo">
-                <a href=""><img src="images/samuPixel.png" width="40px"></a>
+        <div class="blur-header-mobile">
+            <div class="container">
+                <div class="logo">
+                    <a class="" href=""><img src="images/samuPixel.png" width="40px"></a>
+                </div>
+                <nav class="nav-desktop">
+                    <ul>
+                        <li class="active"><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="language">
+                    <a class="active-lang" href="">EN</a>
+                    <a href="">ES</a>
+                </div>
             </div>
-            <nav>
+            <div class="mobile-menu">
+                <button id="menu-toggle">☰</button>
+            </div>
+            <nav id="nav-mobile">
                 <ul>
-                    <li class="active"><a href="#about">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li class="language-options">
+                        <a class="active-lang" href="">EN</a>
+                        <a href="">ES</a>
+                    </li>
                 </ul>
             </nav>
-            <div class="language">A</div>
         </div>
     </header>
     <main>
@@ -97,7 +117,7 @@
                                 <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" data-label="JavaScript">
                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="2.3em" height="2.3em" viewBox="0,0,256,256">
                                         <g transform="translate(6.4,6.4) scale(0.95,0.95)"><g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M43.33594,4h-36.66797c-1.47266,0 -2.66797,1.19531 -2.66797,2.66797v36.66406c0,1.47266 1.19531,2.66797 2.66797,2.66797h36.66406c1.47266,0 2.66797,-1.19531 2.66797,-2.66406v-36.66797c0,-1.47266 -1.19531,-2.66797 -2.66406,-2.66797zM27,36.18359c0,3.99609 -2.34375,5.81641 -5.76562,5.81641c-3.09375,0 -5.32422,-2.07422 -6.23437,-4l3.14453,-1.90234c0.60547,1.07422 1.52734,1.90234 2.85547,1.90234c1.26953,0 2,-0.49609 2,-2.42578v-12.57422h4zM35.67578,42c-3.54297,0 -5.55469,-1.78516 -6.67578,-4l3,-2c0.81641,1.33594 1.70703,2.61328 3.58984,2.61328c1.58203,0 2.41016,-0.78906 2.41016,-1.88281c0,-1.30469 -0.85937,-1.76953 -2.59766,-2.53125l-0.95312,-0.41016c-2.75391,-1.17187 -4.58594,-2.64062 -4.58594,-5.75c0,-2.85937 2.18359,-5.03906 5.58984,-5.03906c2.42578,0 4.16797,0.84375 5.42578,3.05469l-2.96875,1.91016c-0.65625,-1.17578 -1.35937,-1.63672 -2.45703,-1.63672c-1.11719,0 -1.82422,0.71094 -1.82422,1.63672c0,1.14453 0.70703,1.60547 2.34375,2.31641l0.95313,0.41016c3.24609,1.38672 5.07422,2.80469 5.07422,5.99219c0,3.43359 -2.69922,5.31641 -6.32422,5.31641z"></path></g></g></g>
-                                        </svg>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="line">
@@ -126,6 +146,7 @@
                                     </svg>
                                 </a>
                             </div>
+                        </div>
                     </div>
                 </article>
                 <div class="item large-height-artwork"></div>
@@ -187,7 +208,7 @@
                             <a class="link-icon" target="_blank" href="https://samuiitm.github.io/hangman-game">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.2em" height="1.2em" viewBox="0,0,256,256">
                                     <g transform="translate(-34.56,-34.56) scale(1.27,1.27)"><g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="translate(-4.30694,3.45678) scale(8.53333,8.53333)"><path d="M25.98047,2.99023c-0.03726,0.00118 -0.07443,0.00444 -0.11133,0.00977h-5.86914c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h3.58594l-10.29297,10.29297c-0.26124,0.25082 -0.36648,0.62327 -0.27512,0.97371c0.09136,0.35044 0.36503,0.62411 0.71547,0.71547c0.35044,0.09136 0.72289,-0.01388 0.97371,-0.27512l10.29297,-10.29297v3.58594c-0.0051,0.36064 0.18438,0.69608 0.49587,0.87789c0.3115,0.18181 0.69676,0.18181 1.00825,0c0.3115,-0.18181 0.50097,-0.51725 0.49587,-0.87789v-5.87305c0.04031,-0.29141 -0.04973,-0.58579 -0.24615,-0.80479c-0.19643,-0.219 -0.47931,-0.34042 -0.77338,-0.33192zM6,7c-1.09306,0 -2,0.90694 -2,2v15c0,1.09306 0.90694,2 2,2h15c1.09306,0 2,-0.90694 2,-2v-10v-2.57812l-2,2v2.57813v8h-15v-15h8h2h0.57813l2,-2h-2.57812h-2z"></path></g></g></g>
-                                    </svg>
+                                </svg>
                             </a>
                         </div>
                         <p>Hangman is a word-guessing game where players try to guess a hidden word by suggesting letters. Each incorrect guess adds a part to a hanging figure, and the game ends if the figure is fully drawn</p>
@@ -206,7 +227,7 @@
                             <a class="link-icon" target="_blank" href="https://docs.google.com/presentation/d/1mnrRN_DhxeMYol6hKcsA3kYgjWAk1RXfqtnhRQWf0mM/edit?usp=sharing">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.2em" height="1.2em" viewBox="0,0,256,256">
                                     <g transform="translate(-34.56,-34.56) scale(1.27,1.27)"><g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="translate(-4.30694,3.45678) scale(8.53333,8.53333)"><path d="M25.98047,2.99023c-0.03726,0.00118 -0.07443,0.00444 -0.11133,0.00977h-5.86914c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h3.58594l-10.29297,10.29297c-0.26124,0.25082 -0.36648,0.62327 -0.27512,0.97371c0.09136,0.35044 0.36503,0.62411 0.71547,0.71547c0.35044,0.09136 0.72289,-0.01388 0.97371,-0.27512l10.29297,-10.29297v3.58594c-0.0051,0.36064 0.18438,0.69608 0.49587,0.87789c0.3115,0.18181 0.69676,0.18181 1.00825,0c0.3115,-0.18181 0.50097,-0.51725 0.49587,-0.87789v-5.87305c0.04031,-0.29141 -0.04973,-0.58579 -0.24615,-0.80479c-0.19643,-0.219 -0.47931,-0.34042 -0.77338,-0.33192zM6,7c-1.09306,0 -2,0.90694 -2,2v15c0,1.09306 0.90694,2 2,2h15c1.09306,0 2,-0.90694 2,-2v-10v-2.57812l-2,2v2.57813v8h-15v-15h8h2h0.57813l2,-2h-2.57812h-2z"></path></g></g></g>
-                                    </svg>
+                                </svg>
                             </a>
                         </div>
                         <p>I designed the IT infrastructure for a fictional company, covering network setup, DHCP, DNS, web servers (WordPress, Moodle), security with Squid proxy and pfSense, and documentation.</p>

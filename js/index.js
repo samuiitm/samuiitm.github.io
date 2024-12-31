@@ -1,3 +1,4 @@
+// Change the header style at scrolling
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
@@ -7,6 +8,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Change active section
 const itemsListHeader = document.querySelectorAll('.container li');
 itemsListHeader.forEach(item => {
     item.addEventListener('click', () => {
@@ -15,6 +17,7 @@ itemsListHeader.forEach(item => {
     });
 });
 
+// Copy email to clipboard
 let lastCopied = false;
 document.getElementById('gmail-icon').addEventListener('click', () => {
     const email = "samuelcanadas2711@gmail.com";
@@ -35,9 +38,25 @@ document.getElementById('gmail-icon').addEventListener('click', () => {
     });
 });
 
+
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('header nav ul li a');
 
+// Smooth scrolls to the target element when a navigation link is clicked, accounting for a 70px offset.
+navLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 70,
+            });
+        }
+    });
+});
+
+// Change active section based on scrolling position
 const updateActiveSection = () => {
     let current = '';
     sections.forEach(section => {
@@ -58,35 +77,11 @@ const updateActiveSection = () => {
 
 window.addEventListener('scroll', updateActiveSection);
 
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
-});
-
-navLinks.forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 80,
-            });
-        }
-    });
-});
-
 const handleScroll = () => {
     let currentSection = null;
     sections.forEach(section => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= 80 && rect.bottom >= 80) {
+        if (rect.top <= 120 && rect.bottom >= 120) {
             currentSection = section.id;
         }
     });
@@ -104,10 +99,19 @@ const handleScroll = () => {
 window.addEventListener('scroll', handleScroll);
 handleScroll();
 
-const itemsProjectTypes = document.querySelectorAll('.project-types .button');
-itemsProjectTypes.forEach(item => {
-    item.addEventListener('click', () => {
-        itemsProjectTypes.forEach(button => button.classList.remove('active'));
-        item.classList.add('active');
-    });
+// Toggles the mobile menu visibility and updates the menu button icon.
+const bNavMobile = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav-mobile");
+bNavMobile.addEventListener("click", () => {
+    const isOpen = nav.classList.contains("open");
+
+    if (isOpen) {
+        nav.classList.remove("open");
+        setTimeout(() => (nav.style.display = "none"), 300);
+    } else {
+        nav.style.display = "flex"; 
+        setTimeout(() => nav.classList.add("open"), 0);
+    }
+
+    bNavMobile.textContent = isOpen ? "☰" : "🞪";
 });
