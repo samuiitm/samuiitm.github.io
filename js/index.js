@@ -102,16 +102,31 @@ handleScroll();
 // Toggles the mobile menu visibility and updates the menu button icon.
 const bNavMobile = document.getElementById("menu-toggle");
 const nav = document.getElementById("nav-mobile");
+
 bNavMobile.addEventListener("click", () => {
     const isOpen = nav.classList.contains("open");
 
     if (isOpen) {
         nav.classList.remove("open");
+        bNavMobile.classList.remove("open-toggle");
         setTimeout(() => (nav.style.display = "none"), 300);
     } else {
         nav.style.display = "flex"; 
         setTimeout(() => nav.classList.add("open"), 0);
+        setTimeout(() => bNavMobile.classList.add("open-toggle"), 0);
     }
 
-    bNavMobile.textContent = isOpen ? "☰" : "🞪";
+    bNavMobile.textContent = isOpen ? "☰" : "";
+});
+
+// Close the mobile menu when a link is clicked
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        if (nav.classList.contains("open")) {
+            nav.classList.remove("open");
+            setTimeout(() => (nav.style.display = "none"), 300);
+            bNavMobile.classList.remove("open-toggle");
+            bNavMobile.textContent = "☰";
+        }
+    });
 });

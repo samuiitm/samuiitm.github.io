@@ -159,6 +159,12 @@ nav#nav-mobile.open {
     transform: translateY(0);
 }
 
+#menu-toggle.open-toggle {
+    padding: 18px;
+    background-image: url(../images/icons/icon-opened.webp);
+    background-size: contain;
+}
+
 #nav-mobile ul {
     display: flex;
     flex-direction: column;
