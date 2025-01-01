@@ -1,5 +1,5 @@
 /* ---------- FIRST SETTINGS ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -12,6 +12,8 @@ body {
     background: rgb(0,0,0);
     background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgb(24, 4, 43) 31%, rgba(10,1,20,1) 51%, rgba(43,2,81,1) 53%, rgb(44, 0, 69) 56%, rgb(34, 0, 42) 72%, rgba(0,0,0,1) 84%, rgba(31,0,33,1) 100%);
     background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
 }
 
 /* ---------- NAVIGATION MENU ---------- */
