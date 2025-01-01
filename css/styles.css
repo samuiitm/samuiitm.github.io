@@ -1117,6 +1117,10 @@ main {
     .experience-date {
         text-align: left;
     }
+    
+    .end-portfolio {
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width: 642px) {	
