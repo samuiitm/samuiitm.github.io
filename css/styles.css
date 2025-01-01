@@ -909,6 +909,117 @@ main {
     margin-top: -27px;
 }
 
+/* Contact section */
+#contact {
+    max-width: 700px;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-title {
+    margin: 0 0 10px 0;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1;
+    font-style: italic;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.contact-subtitle {
+    margin: 0;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    height: 160px;
+    border-radius: 40px;
+    background: linear-gradient(135deg, #301144, #1f092e, #05000cbe);
+    border: 1px solid #BABABA;
+    box-shadow: 0px 1px 10px 5px #00000094;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card:hover {
+    border: 1px solid #FFF;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    color: #BABABA;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.contact-card:hover .contact-link {
+    color: #FFF;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-wrapper span {
+    font-size: 12px;
+}
+
+.wrap {
+    display: block;
+    height: 40px;
+}
+
+/* Footer */
+#footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-text {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;   
+}
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
@@ -1013,6 +1124,12 @@ main {
     }
 }
 
+@media screen and (max-width: 538px) {
+    .contact-title {
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width: 517px) {
     .about-head {
         flex-direction: column;
@@ -1021,8 +1138,6 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-    
-
     .bento-grid .large {
         grid-column: span 8;
     }
