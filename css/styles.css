@@ -49,7 +49,7 @@ header {
 }
 
 header.scrolled {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.219);
 }
 
@@ -67,8 +67,9 @@ nav.nav-desktop{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #141414;
-    border: 1px solid #232323;
+    background: linear-gradient(135deg, rgba(10,1,20,0.8) 30%, rgba(43,2,81,0.8) 100%);
+    border: 1px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border-radius: 100px;
     padding: 0.3rem;
 }
@@ -88,9 +89,8 @@ nav.nav-desktop{
     border-radius: 100px;
     margin: 0px;    
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+    transition: all 0.3s ease;
     overflow: hidden;
-    border: 1px solid #141414;
 }
 
 .container .nav-desktop li a {
@@ -103,16 +103,11 @@ nav.nav-desktop{
     text-decoration: none;
     border-radius: 100px;
     background-color: inherit;
-    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    transition:  all 0.3s ease;
 }
 
 .container .nav-desktop li a:hover {
     color: #FFF;
-}
-
-.container .nav-desktop li.active {
-    background-color: #1D1D1D;
-    border-color: #232323;
 }
 
 .container .nav-desktop li.active a{
@@ -139,12 +134,12 @@ nav.nav-desktop{
 nav#nav-mobile {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 75px;
     left: 20px;
     right: 20px;
     justify-content: center;
     align-items: center;
-    background-color: #141414;
+    background: linear-gradient(135deg, rgba(10,1,20,0.8) 30%, rgba(43,2,81,0.8) 100%);
     border: 1px solid #ffffff;
     border-radius: 40px;
     padding: 0.3rem;
@@ -182,7 +177,7 @@ nav#nav-mobile.open {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
     overflow: hidden;
-    border: 1px solid #141414;
+
 }
 
 #nav-mobile li a {
@@ -910,7 +905,23 @@ main {
 }
 
 /* Contact section */
+.end-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 30px;
+    padding: 10px 0 0 0;
+    background: linear-gradient(180deg, #00000000, #0000009d, #000000);
+    padding: 27px 0 22px 0;
+}
+
 #contact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
     max-width: 700px;
 }
 
@@ -945,7 +956,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .contact-card {
@@ -1012,7 +1023,7 @@ main {
     align-items: center;
     margin: auto;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .footer-text {
