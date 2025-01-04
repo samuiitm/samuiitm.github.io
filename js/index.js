@@ -96,6 +96,9 @@ function changeLanguage(lang) {
 
     document.querySelectorAll('.language a').forEach(el => el.classList.remove('active-lang'));
     document.querySelector(`.language a[href="${lang.toUpperCase()}"]`).classList.add('active-lang');
+
+    document.querySelectorAll('.language-options a').forEach(el => el.classList.remove('active-lang'));
+    document.querySelector(`.language-options a[href="${lang.toUpperCase()}"]`).classList.add('active-lang');
 }
 
 document.querySelector('.language a[href="EN"]').addEventListener('click', (e) => {
@@ -104,6 +107,16 @@ document.querySelector('.language a[href="EN"]').addEventListener('click', (e) =
 });
 
 document.querySelector('.language a[href="ES"]').addEventListener('click', (e) => {
+    e.preventDefault();
+    changeLanguage('es');
+});
+
+document.querySelector('.language-options a[href="EN"]').addEventListener('click', (e) => {
+    e.preventDefault();
+    changeLanguage('en');
+});
+
+document.querySelector('.language-options a[href="ES"]').addEventListener('click', (e) => {
     e.preventDefault();
     changeLanguage('es');
 });

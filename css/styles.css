@@ -197,7 +197,20 @@ nav#nav-mobile.open {
 
 .language-options {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+}
+
+.language-options a {
+    display: flex;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 2.3rem;
+    color: #B3B3B3;
+    text-decoration: none;
+    border-radius: 100px;
+    background-color: inherit;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
 }
 
 .active-lang {
