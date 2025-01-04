@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Cañadas - Aspiring Developer</title>
+    <title data-key="title">Samuel Cañadas - Aspiring Developer</title>
     <link rel="icon" type="image/png" href="images/icons/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script defer src="js/index.js"></script>
@@ -17,15 +17,15 @@
                 </div>
                 <nav class="nav-desktop">
                     <ul>
-                        <li class="active"><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                      <li class="active"><a href="#about" class="menu-item" data-key="about"></a></li>
+                      <li><a href="#projects" class="menu-item" data-key="projects"></a></li>
+                      <li><a href="#experience" class="menu-item" data-key="experience"></a></li>
+                      <li><a href="#contact" class="menu-item" data-key="contact"></a></li>
                     </ul>
                 </nav>
                 <div class="language">
-                    <a class="active-lang" href="">EN</a>
-                    <a href="">ES</a>
+                    <a class="active-lang" href="EN">EN</a>
+                    <a href="ES">ES</a>
                 </div>
             </div>
             <div class="mobile-menu">
@@ -33,16 +33,16 @@
             </div>
             <nav id="nav-mobile">
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" class="menu-item" data-key="about"></a></li>
+                    <li><a href="#projects" class="menu-item" data-key="projects"></a></li>
+                    <li><a href="#experience" class="menu-item" data-key="experience"></a></li>
+                    <li><a href="#contact" class="menu-item" data-key="contact"></a></li>
                     <li class="language-options">
                         <a class="active-lang" href="">EN</a>
                         <a href="">ES</a>
                     </li>
                 </ul>
-            </nav>
+              </nav>
         </div>
     </header>
     <main>
@@ -54,7 +54,7 @@
                             <div class="about-head">
                                 <div>
                                     <h2 class="title">Samuel Cañadas</h2>
-                                    <h2 class="aspiring-dev">Aspiring Developer</h2>
+                                    <h2 class="aspiring-dev" data-key="aspiring_dev"></h2>
                                 </div>
                                 <div class="social-icons">
                                     <div class="line">
@@ -78,18 +78,16 @@
                                 </div> 
                             </div>
                             <div class="separator"></div>
-                            <p>
-                                There’s nothing more exciting than watching my code take shape and turn ideas into reality. I’m always seeking opportunities to grow, and every challenge fuels my passion to keep pushing forward.
+                            <p data-key="about_large_first_paragraph">
                             </p>
-                            <p id="last-p">
-                                When I’m not coding, I explore all types of games, especially story-driven ones, hit the gym, and let music inspire my creativity—keeping me disciplined and motivated for every project.
+                            <p id="last-p" data-key="about_large_second_paragraph">
                             </p>
                         </div>
                     </div>
                 </article>
                 <article class="item large-width">
                     <div class="content">
-                        <h2 class="tech title" >Technologies</h2>
+                        <h2 class="tech title" data-key="technologies"></h2>
                         <div class="separator"></div>
                         <div class="social-icons">
                             <div class="line">
@@ -153,16 +151,16 @@
                 <div class="large-height">
                     <article class="item small small-top kobe-quote">
                         <div class="content-small">
-                            <p><i>"Dedication makes dreams come true."</i></p>
-                            <p class="name-quote">Kobe Bryant</p>
+                            <p><i data-key="kobe_quote"></i></p>
+                            <p class="name-quote" data-key="kobe_name"></p>
                         </div>
                         <div class="mask"></div>
                         <div class="img-kobe"></div>
                     </article>
                     <article class="item small small-bottom joel-quote">
                         <div class="content-small">
-                            <p><i>"No matter what, you keep finding something to fight for."</i></p>
-                            <p class="name-quote">Joel Miller</p>
+                            <p><i data-key="joel_quote"></i></p>
+                            <p class="name-quote" data-key="joel_name"></p>
                         </div>
                         <div class="mask"></div>
                         <div class="img-joel"></div>
@@ -170,16 +168,16 @@
                 </div>
                 <article class="item medium">
                     <div class="content">
-                        <h2 class="title">From player to creator</h2>
-                        <p id="last-p">I grew up playing video games, but Naughty Dog’s masterpieces sparked my love for story-driven experiences. My dream is to join their team and create games that inspire and immerse players as their work has inspired me.</p>
+                        <h2 class="title" data-key="dream_title"></h2>
+                        <p id="last-p" data-key="dream_text"></p>
                     </div>
                 </article>
             </div>
         </section>
         <section id="projects">
             <div class="projects-header">
-                <h2 class="section-title">Projects</h2>
-                <h3 class="section-subtitle">Take a look to the projects I have made along the time as a student and internship</h3>
+                <h2 class="section-title" data-key="projects"></h2>
+                <h3 class="section-subtitle" data-key="projects_section_subtitle"></h3>
             </div>
             <div class="projects-cards">
                 <article class="project-card project51">
@@ -193,7 +191,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <p>An horitzontal shoot 'em up videogame where you control a spaceship tasked with destroying alien ships escaping from Area 51. This is my first game developed in Unity and programmed in C#.</p>
+                        <p data-key="project_1_description"></p>
                         <div class="technologies-used">
                             <div class="technology">UNITY</div>
                             <div class="technology">C#</div>
@@ -204,14 +202,14 @@
                     <div class="project-image"></div>
                     <div class="project-info">
                         <div class="head-info">
-                            <h2>HANGMAN</h2>
+                            <h2 data-key="project_2_title"></h2>
                             <a class="link-icon" target="_blank" href="https://samuiitm.github.io/hangman-game">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.2em" height="1.2em" viewBox="0,0,256,256">
                                     <g transform="translate(-34.56,-34.56) scale(1.27,1.27)"><g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="translate(-4.30694,3.45678) scale(8.53333,8.53333)"><path d="M25.98047,2.99023c-0.03726,0.00118 -0.07443,0.00444 -0.11133,0.00977h-5.86914c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h3.58594l-10.29297,10.29297c-0.26124,0.25082 -0.36648,0.62327 -0.27512,0.97371c0.09136,0.35044 0.36503,0.62411 0.71547,0.71547c0.35044,0.09136 0.72289,-0.01388 0.97371,-0.27512l10.29297,-10.29297v3.58594c-0.0051,0.36064 0.18438,0.69608 0.49587,0.87789c0.3115,0.18181 0.69676,0.18181 1.00825,0c0.3115,-0.18181 0.50097,-0.51725 0.49587,-0.87789v-5.87305c0.04031,-0.29141 -0.04973,-0.58579 -0.24615,-0.80479c-0.19643,-0.219 -0.47931,-0.34042 -0.77338,-0.33192zM6,7c-1.09306,0 -2,0.90694 -2,2v15c0,1.09306 0.90694,2 2,2h15c1.09306,0 2,-0.90694 2,-2v-10v-2.57812l-2,2v2.57813v8h-15v-15h8h2h0.57813l2,-2h-2.57812h-2z"></path></g></g></g>
                                 </svg>
                             </a>
                         </div>
-                        <p>Hangman is a word-guessing game where players try to guess a hidden word by suggesting letters. Each incorrect guess adds a part to a hanging figure, and the game ends if the figure is fully drawn</p>
+                        <p data-key="project_2_description"></p>
                         <div class="technologies-used">
                             <div class="technology">HTML</div>
                             <div class="technology">CSS</div>
@@ -223,14 +221,14 @@
                     <div class="project-image"></div>
                     <div class="project-info">
                         <div class="head-info">
-                            <h2>FINAL PROJECT SMX</h2>
+                            <h2 data-key="project_3_title"></h2>
                             <a class="link-icon" target="_blank" href="https://docs.google.com/presentation/d/1mnrRN_DhxeMYol6hKcsA3kYgjWAk1RXfqtnhRQWf0mM/edit?usp=sharing">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.2em" height="1.2em" viewBox="0,0,256,256">
                                     <g transform="translate(-34.56,-34.56) scale(1.27,1.27)"><g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="translate(-4.30694,3.45678) scale(8.53333,8.53333)"><path d="M25.98047,2.99023c-0.03726,0.00118 -0.07443,0.00444 -0.11133,0.00977h-5.86914c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h3.58594l-10.29297,10.29297c-0.26124,0.25082 -0.36648,0.62327 -0.27512,0.97371c0.09136,0.35044 0.36503,0.62411 0.71547,0.71547c0.35044,0.09136 0.72289,-0.01388 0.97371,-0.27512l10.29297,-10.29297v3.58594c-0.0051,0.36064 0.18438,0.69608 0.49587,0.87789c0.3115,0.18181 0.69676,0.18181 1.00825,0c0.3115,-0.18181 0.50097,-0.51725 0.49587,-0.87789v-5.87305c0.04031,-0.29141 -0.04973,-0.58579 -0.24615,-0.80479c-0.19643,-0.219 -0.47931,-0.34042 -0.77338,-0.33192zM6,7c-1.09306,0 -2,0.90694 -2,2v15c0,1.09306 0.90694,2 2,2h15c1.09306,0 2,-0.90694 2,-2v-10v-2.57812l-2,2v2.57813v8h-15v-15h8h2h0.57813l2,-2h-2.57812h-2z"></path></g></g></g>
                                 </svg>
                             </a>
                         </div>
-                        <p>I designed the IT infrastructure for a fictional company, covering network setup, DHCP, DNS, web servers (WordPress, Moodle), security with Squid proxy and pfSense, and documentation.</p>
+                        <p data-key="project_3_description"></p>
                         <div class="technologies-used">
                             <div class="technology">PowerPoint</div>
                             <div class="technology">Word</div>
@@ -254,17 +252,17 @@
         </section>
         <section id="experience">
             <div class="experience-header">
-                <h2 class="section-title">Experience</h2>
-                <h3 class="section-subtitle">A professional journey in progress: learning and evolving.</h3>
+                <h2 class="section-title" data-key="experience"></h2>
+                <h3 class="section-subtitle" data-key="experience_section_subtitle"></h3>
             </div>
             <div class="experience-timeline">
                 <article class="experience-card rocagrossa">
                     <div class="experience-content">
                         <div class="experience-content-wrapper">
                             <div class="wrap-vertical">
-                                <h2>IT Support Intern</h2>
+                                <h2 data-key="first_experience_role"></h2>
                                 <div class="company-wrap">
-                                    <h3>IES Rocagrossa</h3>
+                                    <h3 data-key="first_experience_company"></h3>
                                     <a class="link-icon" target="_blank" href="https://agora.xtec.cat/insrocagrossa/">
                                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.1em" height="1.1em" viewBox="0,0,256,256">
                                             <g transform="translate(-34.56,-34.56) scale(1.27,1.27)"><g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="translate(-4.30694,3.45678) scale(8.53333,8.53333)"><path d="M25.98047,2.99023c-0.03726,0.00118 -0.07443,0.00444 -0.11133,0.00977h-5.86914c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h3.58594l-10.29297,10.29297c-0.26124,0.25082 -0.36648,0.62327 -0.27512,0.97371c0.09136,0.35044 0.36503,0.62411 0.71547,0.71547c0.35044,0.09136 0.72289,-0.01388 0.97371,-0.27512l10.29297,-10.29297v3.58594c-0.0051,0.36064 0.18438,0.69608 0.49587,0.87789c0.3115,0.18181 0.69676,0.18181 1.00825,0c0.3115,-0.18181 0.50097,-0.51725 0.49587,-0.87789v-5.87305c0.04031,-0.29141 -0.04973,-0.58579 -0.24615,-0.80479c-0.19643,-0.219 -0.47931,-0.34042 -0.77338,-0.33192zM6,7c-1.09306,0 -2,0.90694 -2,2v15c0,1.09306 0.90694,2 2,2h15c1.09306,0 2,-0.90694 2,-2v-10v-2.57812l-2,2v2.57813v8h-15v-15h8h2h0.57813l2,-2h-2.57812h-2z"></path></g></g></g>
@@ -275,18 +273,17 @@
                             <div class="wrap-vertical">
                                 <div class="location">
                                     <div class="location-icon"></div>
-                                    <span class="location-text">Lloret de Mar, Spain</span>
+                                    <span class="text" data-key="first_experience_location"></span>
                                 </div>
-                                <span class="experience-date">Oct 2023 - Feb 2024</span>
+                                <span class="experience-date" data-key="first_experience_date"></span>
                             </div>
                         </div>
                         <ul>
-                            <li>Resolved technical issues in classrooms, including both hardware and software problems.
-                            </li>
-                            <li>Provided software troubleshooting and support for Chromebooks used by students.</li>
-                            <li>Created a detailed inventory of the institute’s IT systems.</li>
-                            <li>Deployed new operating system images on desktop computers, updating outdated systems and configuring them to prevent unwanted changes using tools like Deep Freeze.</li>
-                            <li>Performed routine hardware maintenance, including cleaning components and repairing computers to avoid premature disposal.</li>
+                            <li data-key="first_experience_task_1"></li>
+                            <li data-key="first_experience_task_2"></li>
+                            <li data-key="first_experience_task_3"></li>
+                            <li data-key="first_experience_task_4"></li>
+                            <li data-key="first_experience_task_5"></li>
                         </ul>
                     </div>
                 </article>
@@ -294,9 +291,9 @@
                     <div class="experience-content">
                         <div class="experience-content-wrapper">
                             <div class="wrap-vertical">
-                                <h2>Digital Marketing Intern</h2>
+                                <h2 data-key="second_experience_role"></h2>
                                 <div class="company-wrap">
-                                    <h3>PAX Jovem</h3>
+                                    <h3 data-key="second_experience_company"></h3>
                                     <a class="link-icon" target="_blank" href="https://paxjovem.pt/">
                                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.1em" height="1.1em" viewBox="0,0,256,256">
                                             <g transform="translate(-34.56,-34.56) scale(1.27,1.27)"><g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="translate(-4.30694,3.45678) scale(8.53333,8.53333)"><path d="M25.98047,2.99023c-0.03726,0.00118 -0.07443,0.00444 -0.11133,0.00977h-5.86914c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h3.58594l-10.29297,10.29297c-0.26124,0.25082 -0.36648,0.62327 -0.27512,0.97371c0.09136,0.35044 0.36503,0.62411 0.71547,0.71547c0.35044,0.09136 0.72289,-0.01388 0.97371,-0.27512l10.29297,-10.29297v3.58594c-0.0051,0.36064 0.18438,0.69608 0.49587,0.87789c0.3115,0.18181 0.69676,0.18181 1.00825,0c0.3115,-0.18181 0.50097,-0.51725 0.49587,-0.87789v-5.87305c0.04031,-0.29141 -0.04973,-0.58579 -0.24615,-0.80479c-0.19643,-0.219 -0.47931,-0.34042 -0.77338,-0.33192zM6,7c-1.09306,0 -2,0.90694 -2,2v15c0,1.09306 0.90694,2 2,2h15c1.09306,0 2,-0.90694 2,-2v-10v-2.57812l-2,2v2.57813v8h-15v-15h8h2h0.57813l2,-2h-2.57812h-2z"></path></g></g></g>
@@ -307,16 +304,16 @@
                             <div class="wrap-vertical">
                                 <div class="location">
                                     <div class="location-icon"></div>
-                                    <span class="location-text">Beja, Portugal</span>
+                                    <span class="location-text" data-key="second_experience_location"></span>
                                 </div>
-                                <span class="experience-date">Apr 2024 - May 2024</span>
+                                <span class="experience-date" data-key="second_experience_date"></span>
                             </div>
                         </div>
                         <ul>
-                            <li>Designed promotional materials such as posters, flyers, and social media posts.
-                            </li>
-                            <li>Assisted in creating digital content to enhance the visibility of the "Futebol de Rua" project across social media platforms.</li>
-                            <li>Supported the promotion of sports and cultural activities organized by the project, contributing to raising awareness about social inclusion through sports.</li>
+                            <li data-key="second_experience_task_1"></li>
+                            <li data-key="second_experience_task_2"></li>
+                            <li data-key="second_experience_task_3"></li>
+                            <li data-key="second_experience_task_4"></li>
                         </ul>
                     </div>
                 </article>
@@ -326,8 +323,8 @@
     <div class="end-portfolio">
         <section id="contact">
             <div class="contact-header">
-                <h2 class="contact-title">TURNING DREAMS INTO REALITY</h2>
-                <h3 class="contact-subtitle">I’m working toward my own dream, and I’d love to partner with others who dream big. Drop me a message on LinkedIn or email!</h3>
+                <h2 class="contact-title" data-key="contact_section_title"></h2>
+                <h3 class="contact-subtitle" data-key="contact_section_subtitle"></h3>
             </div>
             <div class="contact-cards">
                 <div class="contact-card">

@@ -85,7 +85,7 @@ nav.nav-desktop{
 }
 
 .container .nav-desktop li {
-    width: 120px; 
+    width: 127px; 
     padding: 0;
     font-size: 12px;
     border-radius: 100px;
@@ -426,6 +426,7 @@ main {
 
 #last-p {
     margin-bottom: 5px;
+    text-wrap: balance;
 }
 
 .about-head {
@@ -716,6 +717,7 @@ main {
 }
 
 .project-card h2 {
+    font-size: 22px;
     margin: 10px 0 0 0;
     color: #b76eff;
 }
