@@ -40,7 +40,7 @@ const translations = {
         second_experience_task_2: `Assisted in creating digital content to enhance the visibility of the "Futebol de Rua" project across social media platforms.`,
         second_experience_task_3: `Supported the promotion of sports and cultural activities organized by the project, contributing to raising awareness about social inclusion through sports.`,
         second_experience_task_4: `I dedicated time to assist team members with a simple, in-person user guide, helping them become familiar with digital content creation tools such as Canva, ensuring they could confidently utilize these resources to enhance their productivity and creativity.`,
-        contact_section_title: `MAKE IT POSSIBLE, THE 'IM' HAS NO PLACE IF YOU DECIDE IT.`,
+        contact_section_title: `LET'S MAKE IT POSSIBLE`,
         contact_section_subtitle: `I’m working toward my own dream, and I’d love to partner with others who dream big. Drop me a message on LinkedIn or email!`,
     },
     es: {
@@ -83,7 +83,7 @@ const translations = {
         second_experience_task_2: `Ayudé a crear contenido digital para mejorar la visibilidad del proyecto "Futebol de Rua" en las plataformas de redes sociales.`,
         second_experience_task_3: `Apoyé la promoción de actividades deportivas y culturales organizadas por el proyecto, contribuyendo a crear conciencia sobre la inclusión social a través del deporte.`,
         second_experience_task_4: `Dediqué tiempo a asistir a los miembros del equipo con una pequeña guía, ayudándolos a familiarizarse con herramientas de creación de contenido digital como Canva, asegurando que pudieran utilizarlas con confianza para mejorar su productividad y creatividad.`,
-        contact_section_title: `HÁZLO POSIBLE, EL 'IM' NO TIENE LUGAR SI LO DECIDES.`,
+        contact_section_title: `VAMOS A HACERLO POSIBLE!`,
         contact_section_subtitle: `Estoy trabajando para cumplir mis sueños y me gustaría colaborar con otros que también sueñen en grande. ¡Contáctame en LinkedIn o por correo!`,
     }
 }
