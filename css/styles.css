@@ -278,6 +278,14 @@ main {
     z-index: -1;
 }
 
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+
 /* Top right card */
 .bento-grid .large-width {
     grid-column: span 4;
@@ -307,6 +315,8 @@ main {
     position: relative;
     overflow: hidden;
     background: transparent;
+    min-height: 250px;
+    perspective: 1000px;
 }
 
 .bento-grid .medium::before {
@@ -322,6 +332,8 @@ main {
     opacity: 0.6;
     z-index: -1;
 }
+
+
 
 /* Artwork card */
 .bento-grid .large-height-artwork {

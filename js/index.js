@@ -7,15 +7,15 @@ const translations = {
         experience: 'Experience',
         contact: 'Contact',
         aspiring_dev: 'Aspiring Developer',
-        about_large_first_paragraph: `There’s nothing more exciting than watching my code take shape and turn ideas into reality. I’m always seeking opportunities to grow, and every challenge fuels my passion to keep pushing forward.`,
+        about_large_first_paragraph: `There’s nothing more exciting than seeing my code come to life and turning ideas into reality. I’m always looking to grow, and each challenge fuels my drive to keep moving forward.`,
         about_large_second_paragraph: `When I’m not coding, I explore all types of games, especially story-driven ones, hit the gym, and let music inspire my creativity—keeping me disciplined and motivated for every project.`,
         technologies: 'Technologies',
         kobe_quote: `"Dedication makes dreams come true."`,
         kobe_name: `Kobe Bryant`,
         joel_quote: `"No matter what, you keep finding something to fight for."`,
         joel_name: `Joel Miller`,
-        dream_title: `From player to creator`,
-        dream_text: `I grew up playing video games, but Naughty Dog’s masterpieces sparked my love for story-driven experiences. My dream is to one day join their team and create games that inspire and immerse players as their work has inspired me.`,
+        dream_title: `From Passionate to Forensic`,
+        dream_text: `Since I was young, I've been interested in security, criminology, and computer science. My goal is to join the Central Forensic Science Unit of the Spanish National Police as a digital forensics expert, to combine what I love most and help solve cases.`,
         projects_section_subtitle: `Take a look to the projects I have made along the time as a student and internship`,
         project_1_description: `An horitzontal shoot 'em up videogame where you control a spaceship tasked with destroying alien ships escaping from Area 51. This is my first game developed in Unity and programmed in C#.`,
         project_2_title: `HANGMAN`,
@@ -57,8 +57,8 @@ const translations = {
         kobe_name: `Kobe Bryant`,
         joel_quote: `"No importa lo que pase, sigues encontrando algo por lo que luchar."`,
         joel_name: `Joel Miller`,
-        dream_title: `De jugador a creador`,
-        dream_text: `Crecí jugando videojuegos, pero los maestros de Naughty Dog encendieron mi amor por las experiencias narrativas. Mi sueño es unirme a su equipo algún día y crear juegos que inspiren e inmersen a los jugadores como ellos me han inspirado a mí.`,
+        dream_title: `De apasionado a forense`,
+        dream_text: `Desde pequeño me ha interesado la seguridad, la criminología y la informática. Mi objetivo es unirme a la Unidad Central de Criminalística de la Policía Científica, como informático forense, para combinar lo que más me gusta y ayudar a resolver casos.`,
         projects_section_subtitle: `Echa un vistazo a los proyectos que he desarrollado a lo largo del tiempo como estudiante e interno.`,
         project_1_description: `Un videojuego de disparos horizontales en el que controlas una nave espacial destinada a destruir naves alienígenas que escapan del Área 51. Este es mi primer juego desarrollado en Unity y programado en C#.`,
         project_2_title: `AHORCADO`,
@@ -141,7 +141,7 @@ itemsListHeader.forEach(item => {
         item.classList.add('active');
     });
 });
-
+    
 // Copy email to clipboard
 let lastCopied = false;
 document.getElementById('gmail-icon').addEventListener('click', () => {
