@@ -88,6 +88,7 @@ const translations = {
     }
 }
 
+let currentLang = 'es';
 function changeLanguage(lang) {
     document.querySelectorAll('[data-key]').forEach(element => {
         const key = element.getAttribute('data-key');
@@ -104,24 +105,28 @@ function changeLanguage(lang) {
 document.querySelector('.language a[href="EN"]').addEventListener('click', (e) => {
     e.preventDefault();
     changeLanguage('en');
+    currentLang = 'en';
 });
 
 document.querySelector('.language a[href="ES"]').addEventListener('click', (e) => {
     e.preventDefault();
     changeLanguage('es');
+    currentLang = 'es';
 });
 
 document.querySelector('.language-options a[href="EN"]').addEventListener('click', (e) => {
     e.preventDefault();
     changeLanguage('en');
+    currentLang = 'en';
 });
 
 document.querySelector('.language-options a[href="ES"]').addEventListener('click', (e) => {
     e.preventDefault();
     changeLanguage('es');
+    currentLang = 'es';
 });
 
-changeLanguage('en');
+changeLanguage('es');
 
 // Change the header style at scrolling
 window.addEventListener('scroll', () => {
@@ -151,7 +156,11 @@ document.getElementById('gmail-icon').addEventListener('click', () => {
     if (lastCopied) return;
 
     navigator.clipboard.writeText(email).then(() => {
-        gmailIcon.setAttribute('data-label', 'Copied!');
+        if (currentLang === 'es') {
+            gmailIcon.setAttribute('data-label', 'Copiado!');
+        } else if (currentLang === 'en') {
+            gmailIcon.setAttribute('data-label', 'Copied!');
+        }
         gmailIcon.style.cursor = 'not-allowed';
         lastCopied = true;
 
