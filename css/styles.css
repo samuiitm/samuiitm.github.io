@@ -857,6 +857,22 @@ main {
     z-index: -1;
 }
 
+.experience-card.mercadona::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/experience/mercadona.webp);
+    background-position: center;
+    filter: blur(3px) brightness(30%);
+    opacity: 70%;
+    background-size: cover;
+    border-radius: 15px;
+    z-index: -1;
+}
+
 .experience-card:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
