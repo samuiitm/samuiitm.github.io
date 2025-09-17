@@ -142,7 +142,15 @@ document.querySelector('.language-options a[href="ES"]').addEventListener('click
     currentLang = 'es';
 });
 
-changeLanguage('es');
+// Detectar idioma del navegador
+const browserLang = navigator.language || navigator.userLanguage; // ej. "es-ES" o "en-US"
+
+// Elegir idioma que tenemos disponible, si no está, usar 'es' por defecto
+const langToUse = browserLang.startsWith('en') ? 'en' : 'es';
+
+// Cambiar automáticamente el idioma
+changeLanguage(langToUse);
+currentLang = langToUse;
 
 // Change the header style at scrolling
 window.addEventListener('scroll', () => {
