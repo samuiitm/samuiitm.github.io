@@ -116,6 +116,15 @@ function changeLanguage(lang) {
 
     document.querySelectorAll('.language-options a').forEach(el => el.classList.remove('active-lang'));
     document.querySelector(`.language-options a[href="${lang.toUpperCase()}"]`).classList.add('active-lang');
+
+    const hangmanLink = document.getElementById('hangman-link');
+    if (hangmanLink) {
+        if (lang === 'es') {
+            hangmanLink.href = 'https://samuiitm.github.io/juego-ahorcado';
+        } else {
+            hangmanLink.href = 'https://samuiitm.github.io/hangman-game';
+        }
+    }
 }
 
 document.querySelector('.language a[href="EN"]').addEventListener('click', (e) => {
