@@ -515,6 +515,10 @@ main {
     transition: color 0.3s ease;
 }
 
+#gmail-icon {
+    cursor: pointer;
+}
+
 #line a[data-label]::after {
     content: attr(data-label);
     position: absolute;
