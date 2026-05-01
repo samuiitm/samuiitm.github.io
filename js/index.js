@@ -18,8 +18,8 @@ const translations = {
         dream_text: `I have always been fascinated by security, criminology, and computer science. By combining these passions, I discovered that my dream was to be part of the Central Forensic Unit of the Scientific Police as a forensic IT specialist, blending what I love the most to help solve cases.`,
         projects_section_subtitle: `Take a look to the projects I have made along the time as a student and internship`,
         project_1_description: `An horitzontal shoot 'em up videogame where you control a spaceship tasked with destroying alien ships escaping from Area 51. This is my first game developed in Unity and programmed in C#.`,
-        project_2_title: `HANGMAN`,
-        project_2_description: `Hangman is a word-guessing game where players try to guess a hidden word by suggesting letters. Each incorrect guess adds a part to a hanging figure, and the game ends if the figure is fully drawn`,
+        project_2_title: `CE NOVA UNIÓ`,
+        project_2_description: `Nova Unió Sports Club is an MMA and Sambo club located in Lloret de Mar, Spain. In this project, I developed a public website and a private platform to efficiently manage students, payments, attendance, etc.`,
         project_3_title: `FINAL PROJECT SMX`,
         project_3_description: `I designed the IT infrastructure for a fictional company, covering network setup, DHCP, DNS, web servers (WordPress, Moodle), security with Squid proxy and pfSense, and documentation.`,
         experience_section_subtitle: `A professional journey in progress: learning and evolving.`,
@@ -69,8 +69,8 @@ const translations = {
         dream_text: `Siempre me han fascinado la seguridad, la criminología y la informática. Al juntar esas pasiones, descubrí que mi sueño era formar parte de la Unidad Central de Criminalística de la Policía Científica como informático forense, combinando lo que más me gusta para ayudar a resolver casos.`,
         projects_section_subtitle: `Echa un vistazo a los proyectos que he desarrollado a lo largo del tiempo como estudiante e interno.`,
         project_1_description: `Un videojuego de disparos horizontales en el que controlas una nave espacial destinada a destruir naves alienígenas que escapan del Área 51. Este es mi primer juego desarrollado en Unity y programado en C#.`,
-        project_2_title: `AHORCADO`,
-        project_2_description: `El Ahorcado es un juego de adivinanza donde los jugadores deben adivinar una palabra oculta con letras. Cada fallo agrega una parte a una figura colgante, y el juego termina si la figura completa se dibuja.`,
+        project_2_title: `CE NOVA UNIÓ`,
+        project_2_description: `El Club Esportiu Nova Unió es un club de MMA y Sambo ubicado en Lloret de Mar, España. En este proyecto, desarrollé un sitio web público y una plataforma privada para poder llevar a cabo una gestión eficiente de los alumnos, pagos, asistencias, etc.`,
         project_3_title: `PROYECTO FINAL SMR`,
         project_3_description: `Diseñé la infraestructura IT para una empresa ficticia, realizando la configuración de redes, DHCP, DNS, servidores web (WordPress, Moodle), seguridad con proxy Squid y pfSense, documentando detalladamente el todo.`,
         experience_section_subtitle: `Una carrera profesional en progreso: aprendiendo y evolucionando.`,
@@ -116,15 +116,6 @@ function changeLanguage(lang) {
 
     document.querySelectorAll('.language-options a').forEach(el => el.classList.remove('active-lang'));
     document.querySelector(`.language-options a[href="${lang.toUpperCase()}"]`).classList.add('active-lang');
-
-    const hangmanLink = document.getElementById('hangman-link');
-    if (hangmanLink) {
-        if (lang === 'es') {
-            hangmanLink.href = 'https://samuiitm.github.io/juego-ahorcado';
-        } else {
-            hangmanLink.href = 'https://samuiitm.github.io/hangman-game';
-        }
-    }
 }
 
 document.querySelector('.language a[href="EN"]').addEventListener('click', (e) => {
